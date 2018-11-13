@@ -6,4 +6,5 @@
 4. Add Background music to Start MENU (Josh)
 5. Add different colors to  the game  (Nixon)
 6. Add a multiplayer feature (Nixon)
-___IMPROVE IT_____
+
+___IMPROVE IT____
