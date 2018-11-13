@@ -5,4 +5,5 @@
 3. Create a diagram/map of how we want the program to work and what steps should be included in order.
 4. Add Background music to Start MENU (Josh)
 5. Add different colors to  the game  (Nixon)
-IMPROVE IT.
+6. Add a multiplayer feature (Nixon)
+___IMPROVE IT_____
