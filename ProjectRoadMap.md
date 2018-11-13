@@ -1,5 +1,4 @@
-"To Do List" 
-__This will also be bold__
+ __To DO LIST__
 
 1. Search for coding example for snake games 
 2. Find the best code and scrap the rest - it has a lot of issues.
