@@ -7,4 +7,4 @@
 5. Add different colors to  the game  (Nixon)
 6. Add a multiplayer feature (Nixon)
 
-___IMPROVE IT____
+___IMPROVE IT___
