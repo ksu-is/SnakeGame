@@ -102,7 +102,7 @@ class game():
             txtrect = txts.get_rect()
             txtrect.topleft =(20,150)
             self.screen.blit(txts,txtrect)
-            txts = pg.font.SysFont('Courier New',50).render(str(self.snake.score),True,(255,255,255))
+            txts = pg.font.SysFont('TIMESNEWROMAN',50).render(str(self.snake.score),True,(255,255,255))
             txtrect = txts.get_rect()
             txtrect.topleft =(600,150)
             self.screen.blit(txts,txtrect)
@@ -282,7 +282,7 @@ class startmenu():
     def mainloop(self):
         while 1:
             self.screen.fill((35,38,117))
-            self.make_text(400, 150, 'SNAKE GAME', color = (255,255,255), size = 80, a = True)
+            self.make_text(400, 150, 'WORM GAME', color = (255,255,255), size = 80, a = True)
             for event in pg.event.get():
                 if event.type == pg.QUIT:
                     sys.exit()
