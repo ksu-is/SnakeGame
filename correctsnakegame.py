@@ -107,7 +107,7 @@ class game():
             txtrect.topleft =(600,150)
             self.screen.blit(txts,txtrect)
             pg.display.update()
-            self.make_button((153,300,100,50),'Start Over', [(255,255,255),(150,150,150)], action = lambda:restart())
+            self.make_button((255,300,100,50),'Start Over', [(255,255,255),(150,150,150)], action = lambda:restart())
             if self.hover ==True:
                 click = pg.mouse.get_pressed()
                 if click[0] == 1:
@@ -143,7 +143,7 @@ class game():
         if (pos[0]+pos[2]) > mouse[0] > pos[0] and (pos[1]+pos[3]) > mouse[1] > pos[1]:
             self.hover = True
             self.buttonclick = action
-            color = pg.Color(*color[1])
+            color = pg.Color(*color[3])
             alpha = color.a
             color.a = 0
         else:
