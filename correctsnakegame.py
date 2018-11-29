@@ -116,7 +116,7 @@ class game():
                     if click[0] == 0:
                         self.buttonclick()
                         self.click0 = False
-    def make_button(self, pos, text, color, action=None, textsize=20):
+    def make_button(self, pos, text, color, action=None, textsize=30):
         mouse = pg.mouse.get_pos()
         oldpos = pos
         rect = pg.Rect(pos)
