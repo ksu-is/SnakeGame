@@ -1,5 +1,8 @@
 import pygame as pg
 import sys,random
+pg.mixer.init(22050,-16,2,4096)
+pg.mixer.music.load("jazz.wav") 
+pg.mixer.music.play(20,5.0)
 def collide(x1,y1,x2,y2,x3,y3,x4,y4):
     if (x3+x4) > x1 > x3 and (y3+y4) > y1 > y3 or (x3+x4) > x2 >x3 and (y3+y4) > y2 > y3:
         return True
@@ -98,7 +101,7 @@ class game():
                     sys.exit()
             for x in self.blocks:
                 self.screen.blit(x[0],x[1])
-            txts = pg.font.SysFont('Courier New',50).render('YOU LOST    Score:',True,(255,255,255))
+            txts = pg.font.SysFont('Courier New',50).render('Game Over    Score:',True,(255,255,255))
             txtrect = txts.get_rect()
             txtrect.topleft =(20,150)
             self.screen.blit(txts,txtrect)
@@ -152,7 +155,7 @@ class game():
             color.a = 0
             self.hover = False
         rectangle.fill(color,special_flags=pg.BLEND_RGBA_MAX)
-        rectangle.fill((255,200,255, alpha),special_flags=pg.BLEND_RGBA_MIN)   
+        rectangle.fill((255,255,255, alpha),special_flags=pg.BLEND_RGBA_MIN)   
         self.screen.blit(rectangle,pos)
         txts = pg.font.SysFont('Courier New',textsize).render(text,True,(0,0,0))
         txtrect = txts.get_rect()
