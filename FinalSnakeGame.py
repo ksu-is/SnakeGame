@@ -1,5 +1,14 @@
 import pygame as pg
 import sys,random
+import time
+timeamount= input("How many seconds you want to time?:")
+timer=int(timeamount)
+while (timer != 0 ):
+    timer=timer-1
+    print(timer)
+pygame.time.wait(100)
+clock = pygame.time.Clock()
+clock.tick(10)
 pg.mixer.init(22050,-16,2,4096)
 pg.mixer.music.load("jazz.wav") 
 pg.mixer.music.play(20,5.0)
