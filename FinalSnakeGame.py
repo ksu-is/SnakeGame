@@ -1,6 +1,7 @@
 import pygame as pg
 import sys,random
 import time
+import pygame, sys
 timeamount= input("How many seconds you want to time?:")
 timer=int(timeamount)
 while (timer != 0 ):
