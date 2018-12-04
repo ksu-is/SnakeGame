@@ -7,7 +7,7 @@ timer=int(timeamount)
 while (timer != 0 ):
     timer=timer-1
     print(timer)
-pygame.time.wait(100)
+pygame.time.wait(1000)
 clock = pygame.time.Clock()
 clock.tick(10)
 pg.mixer.init(22050,-16,2,4096)
